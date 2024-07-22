@@ -1,16 +1,20 @@
+@font-face {
+  font-family: "iransans";
+  src: url("assets/fonts/IRANSansX-Regular.woff");
+}
 * {
+  font-family: "iransans";
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
 body {
-  font-family: "Playfair Display", serif;
   font-size: 62.5%;
   overflow-x: hidden;
 }
 
-.container {
+.container1 {
   width: 100vw;
   height: 100vh;
   position: relative;
@@ -63,7 +67,7 @@ body {
   color: #4b134f;
 }
 
-.menu_overlay .fas {
+.menu_overlay .fa {
   display: flex;
   align-items: center;
   height: 100%;
@@ -74,7 +78,7 @@ body {
   z-index: 100;
   font-size: 3vw;
 }
-.menu_overlay .fas:hover {
+.menu_overlay .fa:hover {
   color: #333333;
   transform: scale(1.1) rotate(180deg);
 }
@@ -97,7 +101,7 @@ body {
   align-items: center;
   height: 100%;
   position: absolute;
-  right: 20px;
+  right: 0px;
 }
 .menu2 {
   background: #fff;
@@ -108,19 +112,19 @@ body {
 
   height: 100%;
   position: absolute;
-  left: 20px;
+  left: 0px;
 }
 .menu2 i {
   font-size: 3vw;
   color: #222;
   margin-top: 2rem;
 }
-.fas {
+.fa {
   font-size: 3vw;
   color: #222;
 }
 
-.fas:hover {
+.fa:hover {
   color: #333333;
 }
 

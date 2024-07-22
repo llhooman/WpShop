@@ -2,44 +2,702 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>CodePen - Simple Full Screen Menu</title>
+    <title>فاخر فروشگاه اینترنتی</title>
     <link rel="stylesheet" href="./style.css" />
+    <link href="assets/flowbite/flowbite.min.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="/assets/flowbite/css/all.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body dir="rtl">
-    <!-- partial:index.partial.html -->
-    <div class="container">
-      <div class="menu_overlay">
-        <i class="fas fa-times"></i>
+    <div class="container1">
+      <div class="menu_overlay fixed">
+        <i class="fa fa-close fa-3x"></i>
         <ul class="list">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#">صفحه اصلی</a></li>
+          <li><a href="#">محصولات</a></li>
+          <li><a href="#">درباره ما</a></li>
+          <li><a href="#">کارخانه گلاب و عرقیات</a></li>
+          <li><a href="#">مجموعه گردشگری و باغ‌های گل محمدی</a></li>
+          <li><a href="#">کافی شاپ فاخر</a></li>
+          <li><a href="#">سوغات سرای بزرگ فاخر</a></li>
+          <li><a href="#">نمایندگی‌های فاخر</a></li>
         </ul>
       </div>
       <div class="landing_page">
-        <div class="menu">
-          <i class="fas fa-bars"></i>
+        <div class="menu fixed">
+          <i class="fa fa-bars text-3xl"></i>
         </div>
-        <div class="menu2">
+        <div class="menu2 fixed">
           <i class="fa fa-shopping-cart" aria-hidden="true"></i>
           <i class="fa fa-user-circle-o"></i>
           <i class="fa fa-search"></i>
         </div>
+        <div
+          class="border-2 border-solid border-red-800 max-w-[calc(100%-250px)] my-0 mx-auto z-0"
+        >
+          <img class="w-full" src="assets/images/1.gif" alt="top banner" />
+          <!-- Hero Section -->
+          <div class="grid grid-cols-2 grid-rows-2 gap-2 mt-2">
+            <!-- carouselcomp -->
+            <div
+              id="default-carousel"
+              class="relative w-full row-span-2"
+              data-carousel="slide"
+            >
+              <!-- Carousel wrapper -->
+              <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="assets/images/carousel/1.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="..."
+                  />
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="assets/images/carousel/2.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="..."
+                  />
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="assets/images/carousel/3.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <!-- Slider indicators -->
+              <div
+                class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+              >
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                  data-carousel-slide-to="0"
+                ></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="false"
+                  aria-label="Slide 2"
+                  data-carousel-slide-to="1"
+                ></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="false"
+                  aria-label="Slide 3"
+                  data-carousel-slide-to="2"
+                ></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="false"
+                  aria-label="Slide 4"
+                  data-carousel-slide-to="3"
+                ></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="false"
+                  aria-label="Slide 5"
+                  data-carousel-slide-to="4"
+                ></button>
+              </div>
+              <!-- Slider controls -->
+              <button
+                type="button"
+                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev
+              >
+                <span
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                >
+                  <svg
+                    class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 6 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 1 1 5l4 4"
+                    />
+                  </svg>
+                  <span class="sr-only">Previous</span>
+                </span>
+              </button>
+              <button
+                type="button"
+                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next
+              >
+                <span
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                >
+                  <svg
+                    class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 6 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 9 4-4-4-4"
+                    />
+                  </svg>
+                  <span class="sr-only">Next</span>
+                </span>
+              </button>
+            </div>
+            <a
+              class="bg-[url('assets/images/TopBanner/5.jpg')] bg-contain row-span-1 h-full border border-solid border-red-800"
+              href="https://fakhercompany.com"
+            >
+            </a>
+            <a
+              class="bg-[url('assets/images/TopBanner/6.jpg')] bg-contain row-span-1 h-full border border-solid border-red-800"
+              href="https://fakhercompany.com"
+            >
+            </a>
+          </div>
+          <!-- single carousel -->
+          <div class="mt-5">
+            <!-- carouselcomp -->
+            <div
+              id="default-carousel"
+              class="relative w-full row-span-2"
+              data-carousel="slide"
+            >
+              <!-- Carousel wrapper -->
+              <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="assets/images/carousel/1.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="..."
+                  />
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="assets/images/carousel/2.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="..."
+                  />
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="assets/images/carousel/3.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <!-- Slider indicators -->
+              <div
+                class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+              >
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                  data-carousel-slide-to="0"
+                ></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="false"
+                  aria-label="Slide 2"
+                  data-carousel-slide-to="1"
+                ></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="false"
+                  aria-label="Slide 3"
+                  data-carousel-slide-to="2"
+                ></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="false"
+                  aria-label="Slide 4"
+                  data-carousel-slide-to="3"
+                ></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="false"
+                  aria-label="Slide 5"
+                  data-carousel-slide-to="4"
+                ></button>
+              </div>
+              <!-- Slider controls -->
+              <button
+                type="button"
+                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev
+              >
+                <span
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                >
+                  <svg
+                    class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 6 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 1 1 5l4 4"
+                    />
+                  </svg>
+                  <span class="sr-only">Previous</span>
+                </span>
+              </button>
+              <button
+                type="button"
+                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next
+              >
+                <span
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                >
+                  <svg
+                    class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 6 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 9 4-4-4-4"
+                    />
+                  </svg>
+                  <span class="sr-only">Next</span>
+                </span>
+              </button>
+            </div>
+          </div>
+          <!-- double location carousel -->
+          <div class="flex gap-2 mt-5">
+            <!-- carouselcomp -->
+            <div
+              id="default-carousel"
+              class="relative w-full row-span-2"
+              data-carousel="slide"
+            >
+              <!-- Carousel wrapper -->
+              <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="assets/images/carousel/1.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="..."
+                  />
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="assets/images/carousel/2.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="..."
+                  />
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="assets/images/carousel/3.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <!-- Slider indicators -->
+              <div
+                class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+              >
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                  data-carousel-slide-to="0"
+                ></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="false"
+                  aria-label="Slide 2"
+                  data-carousel-slide-to="1"
+                ></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="false"
+                  aria-label="Slide 3"
+                  data-carousel-slide-to="2"
+                ></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="false"
+                  aria-label="Slide 4"
+                  data-carousel-slide-to="3"
+                ></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="false"
+                  aria-label="Slide 5"
+                  data-carousel-slide-to="4"
+                ></button>
+              </div>
+              <!-- Slider controls -->
+              <button
+                type="button"
+                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev
+              >
+                <span
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                >
+                  <svg
+                    class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 6 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 1 1 5l4 4"
+                    />
+                  </svg>
+                  <span class="sr-only">Previous</span>
+                </span>
+              </button>
+              <button
+                type="button"
+                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next
+              >
+                <span
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                >
+                  <svg
+                    class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 6 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 9 4-4-4-4"
+                    />
+                  </svg>
+                  <span class="sr-only">Next</span>
+                </span>
+              </button>
+            </div>
+            <!-- carouselcomp -->
+            <div
+              id="default-carousel"
+              class="relative w-full row-span-2"
+              data-carousel="slide"
+            >
+              <!-- Carousel wrapper -->
+              <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="assets/images/carousel/1.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="..."
+                  />
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="assets/images/carousel/2.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="..."
+                  />
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                  <img
+                    src="assets/images/carousel/3.jpg"
+                    class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+                    alt="..."
+                  />
+                </div>
+              </div>
+              <!-- Slider indicators -->
+              <div
+                class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse"
+              >
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="true"
+                  aria-label="Slide 1"
+                  data-carousel-slide-to="0"
+                ></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="false"
+                  aria-label="Slide 2"
+                  data-carousel-slide-to="1"
+                ></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="false"
+                  aria-label="Slide 3"
+                  data-carousel-slide-to="2"
+                ></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="false"
+                  aria-label="Slide 4"
+                  data-carousel-slide-to="3"
+                ></button>
+                <button
+                  type="button"
+                  class="w-3 h-3 rounded-full"
+                  aria-current="false"
+                  aria-label="Slide 5"
+                  data-carousel-slide-to="4"
+                ></button>
+              </div>
+              <!-- Slider controls -->
+              <button
+                type="button"
+                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev
+              >
+                <span
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                >
+                  <svg
+                    class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 6 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M5 1 1 5l4 4"
+                    />
+                  </svg>
+                  <span class="sr-only">Previous</span>
+                </span>
+              </button>
+              <button
+                type="button"
+                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next
+              >
+                <span
+                  class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none"
+                >
+                  <svg
+                    class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180"
+                    aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 6 10"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="m1 9 4-4-4-4"
+                    />
+                  </svg>
+                  <span class="sr-only">Next</span>
+                </span>
+              </button>
+            </div>
+          </div>
+          <!-- footer -->
+          <div>
+            <footer class="bg-white dark:bg-gray-900">
+              <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+                <div class="md:flex md:justify-between">
+                  <div class="mb-6 md:mb-0">
+                    <a href="https://flowbite.com/" class="flex items-center">
+                      <img
+                        src="assets/images/logo.png"
+                        class="h-20 me-3"
+                        alt="FlowBite Logo"
+                      />
+                      <span
+                        class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+                        >فروشگاه اینترنتی فاخر</span
+                      >
+                    </a>
+                  </div>
+                  <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+                    <div>
+                      <ul
+                        class="text-gray-500 dark:text-gray-400 text-md text-red-900"
+                      >
+                        <li class="mb-4">
+                          <a
+                            href="https://fakhercompany.com/contactus"
+                            class="text-lg hover:text-[#424242]"
+                            >تماس با ما</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://fakhercompany.com/aboutus"
+                            class="text-lg hover:text-[#424242]"
+                            >درباره فاخر</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <ul
+                        class="text-gray-500 dark:text-gray-400 text-md text-red-900"
+                      >
+                        <li class="mb-4 text-lg">
+                          <a
+                            href="https://github.com/themesberg/flowbite"
+                            class="text-lg hover:text-[#424242]"
+                            >صفحه اصلی</a
+                          >
+                        </li>
+                        <li>
+                          <a
+                            href="https://discord.gg/4eeurUVvTy"
+                            class="text-lg hover:text-[#424242]"
+                            >محصولات فاخر</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                    <div>
+                      <a
+                        referrerpolicy="origin"
+                        target="_blank"
+                        href="https://trustseal.enamad.ir/?id=495889&Code=nBUuVjOCgyX5sv2RfVsOQXbhBLFh7TrG"
+                        ><img
+                          class="w-[100px]"
+                          referrerpolicy="origin"
+                          src="assets/images/enamad.png"
+                          alt=""
+                          style="cursor: pointer"
+                          code="nBUuVjOCgyX5sv2RfVsOQXbhBLFh7TrG"
+                      /></a>
+                    </div>
+                  </div>
+                </div>
+                <hr
+                  class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8"
+                />
+                <div class="grid grid-cols-3">
+                  <div class="flex gap-2">
+                    <div>
+                      <i
+                        class="fa fa-phone text-red-800"
+                        style="font-size: 48px"
+                      ></i>
+                    </div>
+                    <div class="text-2xl">
+                      <p class="text-md text-stone-900">با ما تماس بگیرید</p>
+                      <p class="text-red-800">09917379001</p>
+                    </div>
+                  </div>
+                  <div class="col-span-2 text-lg">
+                    <p>تماس با فاخر</p>
+                    <p>شماره تماس 09917379001</p>
+                    <p>
+                      فروشگاه شیراز بلواربوستان روبروی مسجد جامع سوغات سرای فاخر
+                    </p>
+                    <p>
+                      کافه شیراز بلوار بوستان روبروی مسجد جامع کافی شاپ فاخر
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="sm:flex sm:items-center sm:justify-between bg-stone-900 w-full p-4"
+              >
+                <span
+                  class="text-sm text-gray-500 sm:text-center dark:text-gray-400 text-white"
+                  >© 2024 کلیه حقوق این وب سایت محفوظ می باشد
+                </span>
+                <div class="flex mt-4 sm:justify-center sm:mt-0 text-white">
+                  <i
+                    class="fa fa-instagram text-white"
+                    style="font-size: 48px"
+                    aria-hidden="true"
+                  ></i>
+                </div>
+              </div>
+            </footer>
+          </div>
+        </div>
       </div>
     </div>
 
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script src="assets/flowbite/flowbite.min.js"></script>
+    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
       rel="stylesheet"
-    />
-    <title>Full Page Menu Layout</title>
-    <script
-      src="https://kit.fontawesome.com/a7e9f794eb.js"
-      crossorigin="anonymous"
-    ></script>
-    <!-- partial -->
+    /> -->
+
     <script src="./script.js"></script>
   </body>
 </html>
